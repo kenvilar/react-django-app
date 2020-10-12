@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'char_count',
+    'char_count.apps.CharCountConfig',
 ]
 
 MIDDLEWARE = [
