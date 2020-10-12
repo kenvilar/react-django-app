@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="App">
       <div>
-        <label htmlFor="char-input">How many characters does</label>
-        <input type="text" id='char-input'/>
-        <button onClick={handleSubmit}>have?</button>
+        <form action="" onSubmit={handleSubmit} noValidate>
+          <label htmlFor="char-input">How many characters does</label>
+          <input type="text" id='char-input'/>
+          <button type='submit'>have?</button>
+        </form>
       </div>
       <div>
         <h3 id='char-count'></h3>
@@ -19,6 +21,7 @@ function App() {
 }
 
 function handleSubmit(event) {
+  event.preventDefault();
   const text = document.querySelector('#char-input').value;
 
   axios.get(`/char_count?text=${text}`)
