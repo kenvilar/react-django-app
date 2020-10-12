@@ -13,7 +13,7 @@ function App() {
         </form>
       </div>
       <div>
-        <h3 id='char-count'></h3>
+        <strong><p id='char-count'></p></strong>
       </div>
     </div>
   );
