@@ -2,6 +2,21 @@ Create React-Django-Docker App
 ==============================
 
 
+# First
+To setup the app
+```
+docker-compose build
+```
+To run the app
+```
+docker-compose up
+```
+To stop the app
+```
+docker-compose down
+```
+
+
 # Dockerized REACT
 To update/install packages in frontend
 ```
